@@ -21,7 +21,10 @@ const logService = {
 };
 
 const debugEnabled = () => {
-  const debug = process.env.REACT_APP_NODE_ENV === "development";
+  const debug =
+    process.env.REACT_APP_NODE_ENV === "development" ||
+    process.env.REACT_APP_NODE_ENV === "dev" ||
+    process.env.REACT_APP_NODE_ENV === "test";
   return debug;
 };
 
