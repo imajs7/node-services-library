@@ -1,0 +1,33 @@
+{
+  "name": "services-library",
+  "version": "1.0.0",
+  "description": "NodeJs Services Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/imajs7/node-services-library.git"
+  },
+  "keywords": [
+    "nodejs",
+    "services",
+    "utility"
+  ],
+  "author": "Anurag Jaisingh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imajs7/node-services-library/issues"
+  },
+  "homepage": "https://github.com/imajs7/node-services-library#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
