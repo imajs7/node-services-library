@@ -1,5 +1,5 @@
 {
-  "name": "services-library",
+  "name": "@merncloud/node-services-library",
   "version": "1.0.0",
   "description": "NodeJs Services Library",
   "main": "dist/index.js",
