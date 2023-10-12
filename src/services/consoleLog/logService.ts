@@ -18,6 +18,12 @@ const logService = {
       );
     }
   },
+
+  table: (message: any, ...args: any) => {
+    if (debugEnabled()) {
+      console.table(message, ...args);
+    }
+  },
 };
 
 const debugEnabled = () => {
