@@ -1,6 +1,6 @@
 {
   "name": "@merncloud/node-services-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NodeJs Services Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,5 +29,9 @@
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "dotenv": "^16.3.1"
+  }
 }

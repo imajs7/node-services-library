@@ -1,3 +1,5 @@
+import { appConfig } from "../../config";
+
 const logService = {
   log: (message: any, ...args: any) => {
     if (debugEnabled()) {
@@ -28,9 +30,9 @@ const logService = {
 
 const debugEnabled = () => {
   const debug =
-    process.env.REACT_APP_NODE_ENV === "development" ||
-    process.env.REACT_APP_NODE_ENV === "dev" ||
-    process.env.REACT_APP_NODE_ENV === "test";
+    appConfig.env === "development" ||
+    appConfig.env === "dev" ||
+    appConfig.env === "test";
   return debug;
 };
 
