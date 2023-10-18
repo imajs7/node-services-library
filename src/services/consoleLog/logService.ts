@@ -1,6 +1,6 @@
 import { appConfig } from "../../config";
 
-const logService = {
+const logger = {
   log: (message: any, ...args: any) => {
     if (debugEnabled()) {
       console.log(`%c${message}`, "color: green; background: yellow", ...args);
@@ -29,11 +29,8 @@ const logService = {
 };
 
 const debugEnabled = () => {
-  const debug =
-    appConfig.env === "development" ||
-    appConfig.env === "dev" ||
-    appConfig.env === "test";
-  return debug;
+  const { allowedEnvironments } = appConfig.logServiceConfig;
+  return allowedEnvironments.includes(appConfig.env);
 };
 
-export { logService };
+export { logger };
