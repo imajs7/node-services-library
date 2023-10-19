@@ -1,4 +1,4 @@
-import * as logService from "./services/consoleLog/logService";
+import * as logService from "./services/consoleLog";
 import * as auditTrail from "./services/auditTrail/getObjectChanges";
 import * as EventProvider from "./services/events/eventService";
 import * as dateService from "./services/timeService/getFormattedDate";
